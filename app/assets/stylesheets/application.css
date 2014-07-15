@@ -17,11 +17,24 @@
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../assets/fonts/glyphicons-halflings-regular.eot');
-  src: url('../assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype')
-       url('../assets/fonts/glyphicons-halflings-regular.woff') format('woff'), 
-       url('../assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
-       url('../assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('glyphicons-halflings-regular.eot');
+  src: url('glyphicons-halflings-regular.eot?#iefix')
+format('embedded-opentype')
+       url('glyphicons-halflings-regular.woff') format('woff'),
+       url('glyphicons-halflings-regular.ttf') format('truetype'),
+       url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular')
+format('svg');
+}
+
+.navbar.navbar-default{
+  position: relative;
+  z-index: 0;
+  margin-bottom: 0;
+}
+
+.home-logo{
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 
 .btn.btn-navbar{
@@ -29,12 +42,24 @@
 }
 
 .signin-button{
-	float: right !important;
+	position: relative;
+  z-index: 1;
+  float: right !important;
+  margin-right: 2px;
+  margin-top: 2px;
+}
+
+.navbar-toggle{
+  float: left !important;
+  margin-left: 2px;
 }
 
 .btn.btn-med{
 	background-color: #0085E1;
 	background-image: none;
-	color: white;
-	/*OVERRITE LINK COLOR*/
+
+}
+
+.btn.btn-med a{
+    color: white;
 }
