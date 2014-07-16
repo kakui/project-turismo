@@ -15,4 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap.min
+//= require jquery.pickmeup.min
 
+$(document).ready(function(){
+
+	$('.date').pickmeup();
+});
